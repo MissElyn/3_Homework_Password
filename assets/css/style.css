@@ -1,10 +1,10 @@
-#body{
-    background-color: olive;
+body{
+    background-color: whitesmoke;
 }
 
 h1{
     font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
-    font: 14px;
+    font: 12px;
     text-align: center;
     font-weight: bold;
     color: black;
@@ -27,17 +27,25 @@ h2{
 
   .container{
     width: 80%;
+    height: 30%;
+    background-color: lightyellow;
+    border-style: solid;
+    border-width: 5px;
+    border: burlywood
     
   
   }
   
  .rGenerator{
-   
+   width: 50%;
+   height: 40%;
+   background-color: whitesmoke
 
  }
 
  .p1 {
+   
    font-family:"Arial", "Helvetica", sans-serif;
-   font-size: 10px;
+   font-size: 12px;
    color: tomato;
  }
