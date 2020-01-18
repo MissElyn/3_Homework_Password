@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Password Generator</title>
-    <script src="./assets/javascript/Script.js"></script>
+ 
   </head>
   <body>
 
@@ -38,6 +38,7 @@
 
 
         <div class= "rGenerator">
+          <input type="text" id="passwd" minlength="8" maxlength="128"> 
         </div>
       </div>
   </div>
@@ -47,7 +48,8 @@
     <hr>
     <div class="row">
       <div class="col-6 text-center">
-        <button type="button" class="btn btn-primary btn-lg" id="gPassword">Generate Password</button>  
+        <button type="button" class="btn btn-primary btn-lg" id="gPasswd">Generate Password</button> 
+        
     
       </div>
 
@@ -59,7 +61,7 @@
   <br>
   <br>
   <p class="p1">Specification:
-      Your password will be between eight(8) and twenty-eight(28) characters long.<br>
+      Your password will be between eight(8) and one-hundred twenty-eight(128) characters long.<br>
       Your password will contain at least:         
         one(1) number; 
         one(1) upper-case alphnumaric character;
@@ -79,5 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/Script.js"></script>
   </body>
 </html>
