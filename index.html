@@ -23,28 +23,81 @@
       <div class="row">
         <div class="col-12">
           <h2>Generate a Password</h2>
+
+          
+          
+          <div class="row">
+            <div class="col-1">
+              </div>
+      
+            <div class="col-2">
+              <p class="p1">
+               </p>
+              <input type="number" min="8" max="128" id="passwdLength">
+              <p class="p1">
+                Choose a length 
+                <br>between 8 -128<br>
+            </p>
+            
+            <div class="row">
+              <div class="col-2">
+              <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="uppercase">
+              <label class="custom-control-label" for="uppercase">Uppercase</label>
+            </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="lowercase">
+                <label class="custom-control-label" for="lowercase">Lowercase</label>
+              </div>
+            </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-2">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="number">
+                <label class="custom-control-label" for="number">Number</label>
+              </div>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="col-2">
+                <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="symbol">
+                <label class="custom-control-label" for="symbol">Symbol</label>
+              </div>
+            </div>
+            </div>
+
+            </div>
+          </div>
         </div>
       </div>
       <hr>
       <div class="row">
         <div class="col-12">
           <h5>Your Secure Password</h5>
+          <p id="password"></p>
         </div>
     </div>
+    
+
     <div class="row">
       <div class="col-12">
-        
-        <!-- random generator here -->
-
-
         <div class= "rGenerator">
-          <input type="text" id="passwd" minlength="8" maxlength="128"> 
-        </div>
+          <input type="text" id="passwd">  
+      </div>
       </div>
   </div>
         <br>
         <br>
-
+        
     <hr>
     <div class="row">
       <div class="col-6 text-center">
@@ -60,14 +113,7 @@
   <br>
   <br>
   <br>
-  <p class="p1">Specification:
-      Your password will be between eight(8) and one-hundred twenty-eight(128) characters long.<br>
-      Your password will contain at least:         
-        one(1) number; 
-        one(1) upper-case alphnumaric character;
-        one(1) lower-case alphnumaric character;
-        one(1) of these eight(8) special characters (! @ # $ % ^ & *)
-  </p>
+  
 </div>
   
 

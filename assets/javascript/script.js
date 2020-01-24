@@ -3,35 +3,68 @@
 // The js file will need to randomly generate a password between 8-128 char.//
 
 
-var charU = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!$%^&*()-=+[]{};#:@~,./<>?";
-var charL  = "";
-var num = "";
-var sym = "";
+
+var charU = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charL = "abcdefghijklmnopqrstuvwxyz";
+var num = "0123456789";
+var numSt = num.toString()
+var sym = "!@#$%^&*";
+var allChar = "";
+
+var passwd = document.getElementById("passwd");
+var gPasswd = document.getElementById("gPasswd");
+var passwdLength = document.getElementById("passwdLength");
+
+var uppercase = document.getElementById("uppercase");
+var lowercase = document.getElementById("lowercase");
+var number = document.getElementById("number");
+var symbol = document.getElementById("symbol");
+
+gPasswd.addEventListener("click", function () {
+
+  if (uppercase.checked) {
+    allChar = allChar + charU;
+    //console.log(allChar)
+
+  }
 
 
+  if (lowercase.checked) {
+    allChar = allChar + charL
+  }
+
+  if (number.checked) {
+    allChar = allChar + numSt
+  }
+
+  if (symbol.checked) {
+    allChar = allChar + sym
+  }
 
 
-var passwd=document.getElementById("passwd");
-var gPasswd=document.getElementById("gPasswd");
+     // console.log(passwdLength.value);
 
-gPasswd.addEventListener("click", function()
+    var length = passwdLength.value;
 
-{       
+    var password = "";
 
-  var length = 10;  
-  var password = "";
+    //for loop
 
-            //for loop
+    for (i = 0; i < length; i++) {
+      var c = Math.floor(Math.random()
+        * allChar.length);
 
-        for (i=0; i < length; i++) {
-          var c = Math.floor(Math.random()
-          *charU.length);
-          password += charU.charAt(c)
-        }
-        
+     // console.log(allChar.length);
+      password = password + allChar.charAt(c)
+    }
+
+    //console.log(password);
+
+    passwd.value = password;
 
 
-passwd.value = password;
-      
-      
-});
+  });
+//var duplicate = document.getElementById("duplicate");
+  //duplicate.addEventListener("click", function(){})
+
+  
