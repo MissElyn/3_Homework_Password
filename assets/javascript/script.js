@@ -64,7 +64,11 @@ gPasswd.addEventListener("click", function () {
 
 
   });
-//var duplicate = document.getElementById("duplicate");
-  //duplicate.addEventListener("click", function(){})
+
+var reset = document.getElementById("reset");
+ reset.addEventListener("click", function(){
+location.reload()
+
+})
 
   
